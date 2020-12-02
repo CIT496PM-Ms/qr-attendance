@@ -1,16 +1,30 @@
-import React from 'react';
-import '../../App.css';
+import React, { Component } from "react";
+import GenPassFunction from "./GenPassFunction";
+import './GenPassFunction.js';
 import './GeneratePassString.css';
 
-function GeneratePassString() {
+class GeneratePassString extends Component {
+  constructor(props) {
+    super(props);
 
-  var text = "";
-  var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+    this.state = {
+      passString: null,
+      formErrors: {
+      passString: ""
+      }
+    };
+  }
 
-    for (var i = 0; i < 10; i++)
-    text += possible.charAt(Math.floor(Math.random() * possible.length));
-
-    return text;
+  
+  render() {
+    return (
+      <div className='genPassString'>
+        <div className='formGenPassString'>
+          <GenPassFunction></GenPassFunction>
+        </div>
+      </div>
+    );
+  }
 }
 
 export default GeneratePassString;

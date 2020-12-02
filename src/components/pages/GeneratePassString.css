@@ -1,18 +1,22 @@
-.faculty--main-container {
-    background: url('../../assets/images/img-2.jpg') center center/cover no-repeat; 
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
-    object-fit: contain;
-  }
-  
-  .GeneratePassString {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 50px;
+.genPassString {
+  background: url('../../assets/images/img-1.jpg') center center/cover no-repeat; 
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+  object-fit: contain;
+}
+
+.formGenPassString {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 50px #555;
+  background-color: #f1aa80;
 }
   

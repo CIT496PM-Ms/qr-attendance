@@ -17,7 +17,7 @@ const formValid = ({ formErrors, ...rest }) => {
   return valid;
 };
 
-class App extends Component {
+class Login extends Component {
   constructor(props) {
     super(props);
 
@@ -70,8 +70,8 @@ class App extends Component {
     const { formErrors } = this.state;
 
     return (
-      <div className="wrapper">
-        <div className="form-wrapper">
+      <div className="wrapper1">
+        <div className="form-wrapper1">
           <h1>Login</h1>
           <form onSubmit={this.handleSubmit} noValidate>
             <div className="csunID">
@@ -102,7 +102,7 @@ class App extends Component {
                 <span className="errorMessage">{formErrors.password}</span>
               )}
             </div>
-            <div className="createAccount">
+            <div className="login">
               <button type="submit">Login</button>
             </div>
           </form>
@@ -112,4 +112,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Login;

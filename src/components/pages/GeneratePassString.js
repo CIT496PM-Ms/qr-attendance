@@ -2,7 +2,7 @@ import React from 'react';
 import '../../App.css';
 import './GeneratePassString.css';
 
-function GeneratePassString(length) {
+function GeneratePassString() {
 
   var text = "";
   var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";

@@ -1,13 +1,16 @@
 import React from 'react';
 import '../../App.css';
+import './GeneratePassString.css';
 
-function GeneratePassString() {
-  return (
-  <div className = 'faculty--main-container'>
-    <h1>Faculty</h1>
-    <p>Generate Pass String</p>
-  </div>
-  );
+function GeneratePassString(length) {
+
+  var text = "";
+  var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+    for (var i = 0; i < 10; i++)
+    text += possible.charAt(Math.floor(Math.random() * possible.length));
+
+    return text;
 }
 
 export default GeneratePassString;

@@ -1,3 +1,5 @@
+//This code is based on the Youtube tutorial, and this is for the Sign Up function in this project.
+
 import React, { Component } from "react";
 import './SignUp.css';
 
@@ -37,6 +39,7 @@ class SignUp extends Component {
     };
   }
 
+  //The function checks if the user input the CSUN ID, Email and Password
   handleSubmit = e => {
     e.preventDefault();
 
@@ -52,6 +55,8 @@ class SignUp extends Component {
     }
   };
 
+
+  //This function checks if the user input the required number of chracters for CSUN ID, Email and Password
   handleChange = e => {
     e.preventDefault();
     const { name, value } = e.target;
@@ -77,7 +82,8 @@ class SignUp extends Component {
 
     this.setState({ formErrors, [name]: value }, () => console.log(this.state));
   };
-
+  
+  //This generate the input places for CSUN ID, Email and Password, and also the Create Account button
   render() {
     const { formErrors } = this.state;
 

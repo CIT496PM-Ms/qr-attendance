@@ -1,3 +1,5 @@
+//This is the Generate Pass string page for this project
+
 import React, { Component } from "react";
 import './GeneratePassString.css';
 

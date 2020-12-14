@@ -1,4 +1,5 @@
-//This code is based on the Youtube tutorial
+//This code is based on the Youtube tutorial, and this is the Pass string input page for this project
+
 import React, { Component } from "react";
 import './InputPassString.css';
 

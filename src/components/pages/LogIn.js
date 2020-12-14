@@ -1,3 +1,5 @@
+//This code is based on the Youtube tutorial, and this is for the Login function in this project.
+
 import React, { Component } from "react";
 import './Login.css';
 
@@ -31,6 +33,7 @@ class Login extends Component {
     };
   }
 
+  //The function checks if the user input the CSUN ID and Password
   handleSubmit = e => {
     e.preventDefault();
 
@@ -45,6 +48,7 @@ class Login extends Component {
     }
   };
 
+  //This function checks if the user input the required number of chracters for CSUN ID and Password
   handleChange = e => {
     e.preventDefault();
     const { name, value } = e.target;
@@ -66,6 +70,7 @@ class Login extends Component {
     this.setState({ formErrors, [name]: value }, () => console.log(this.state));
   };
 
+  //This generate the input places for CSUN ID and Password, and also the loing button
   render() {
     const { formErrors } = this.state;
 

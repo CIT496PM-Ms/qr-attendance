@@ -1,3 +1,4 @@
+//This code is based on the Youtube tutorial
 import React, { Component } from "react";
 import './InputPassString.css';
 
@@ -28,7 +29,7 @@ class passString extends Component {
       }
     };
   }
-
+  
   handleSubmit = e => {
     e.preventDefault();
 
@@ -42,6 +43,7 @@ class passString extends Component {
     }
   };
 
+  //function that checking if the student input 10 characters for the pass string
   handleChange = e => {
     e.preventDefault();
     const { name, value } = e.target;
@@ -62,6 +64,7 @@ class passString extends Component {
   render() {
     const { formErrors } = this.state;
 
+    //This creates the input place for student, and the button to submit the pass string
     return (
       <div className="wrapper3">
         <div className="form-wrapper3">

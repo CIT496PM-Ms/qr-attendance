@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-//import GenPassFunction from "./GenPassFunction";
-//import './GenPassFunction.js';
 import './GeneratePassString.css';
 
 class GeneratePassString extends Component {
@@ -15,6 +13,7 @@ class GeneratePassString extends Component {
     };
   }
   
+  //Generate unique random pass string based on the post on Stackoverflow
   GenPass() {
     var pass ="";
     var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()";
@@ -26,6 +25,7 @@ class GeneratePassString extends Component {
       console.log(pass);
   }
 
+  //Create a button that trigger the GenPass function, and print out on screen
   render() {
     return (
       <div className='genPassString'>

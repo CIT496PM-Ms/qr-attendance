@@ -1,3 +1,4 @@
+/**This is based off of HeroSection.js from https://github.com/briancodex/react-website-v1.git**/
 import React from 'react';
 import { Button } from './Button';
 import '../App.css';

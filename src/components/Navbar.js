@@ -1,3 +1,4 @@
+/**This is based off of Navbar.js from https://github.com/briancodex/react-website-v1.git**/
 import React, { useState, useEffect } from 'react';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
